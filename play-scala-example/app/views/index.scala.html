@@ -1,0 +1,41 @@
+@(message: String)
+
+<style>
+    fieldset {
+    padding: 1em;
+    font:80%/1 sans-serif;
+    }
+
+    label {
+    float:left;
+    width:25%;
+    margin-right:0.5em;
+    padding-top:0.2em;
+    text-align:right;
+    font-weight:bold;
+    }
+</style>
+
+@main("Details of the vehicle being checked ") {
+<div>
+    <h2>
+        @message
+    </h2>
+</div>
+
+<form action="@routes.Application.getVehicleDetails()" method="post">
+    <fieldset>
+        <legend>To make an enquiry enter the vehicle registration number (number plate) and the vehicle make.</legend>
+        <label for="name">Registration number</label>
+        <input type="text" name="number" id="name" />
+        <br />
+        <label for="make">Vehicle make</label>
+        <input type="text" name="make" id="make" />
+        <br />
+        <br />
+        <label for="button"></label>
+        <button id="button">Search</button>
+    </fieldset>
+</form>
+
+}

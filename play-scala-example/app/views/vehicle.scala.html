@@ -1,0 +1,94 @@
+@import model.{VehicleDetails}
+@(vehicleDetails: VehicleDetails)
+<style>
+    span.registrationNumberLabel {
+    background-color:#F5D625;
+    color:black;
+    margin:5px;
+    padding:5px;
+    max-width:400px;
+    border-top-style:groove;
+    border-left-style:groove;
+    border-right-style:groove;
+    border-bottom-style:groove;
+    }
+
+    table.group {
+    background-color:#299E81;
+    color:white;
+    margin:5px;
+    padding:5px;
+    max-width:400px;
+    border-top-style:groove;
+    border-left-style:groove;
+    border-right-style:groove;
+    border-bottom-style:groove;
+    }
+</style>
+
+<div>
+
+    <div>
+        <h2><span>Registration number: </span>
+        <span class="registrationNumberLabel">@vehicleDetails.registrationNumber</span></h2>
+    </div>
+
+    <table>
+      <tr><td>
+    <table class="group">
+        <tr><td>✔ Taxed</td></tr>
+        <tr><td>Tax due: @vehicleDetails.taxDueDate</td></tr>
+    </table>
+    </td>
+    <td>
+    <table class="group">
+        <tr><td>✔ MOT</td></tr>
+        <tr><td>Expires: @vehicleDetails.mot</td></tr>
+    </table>
+    </td>
+    </tr>
+    </table>
+    <h3>Vehicle details</h3>
+    <ul>
+        <li><span>
+          Vehicle make
+        </span><strong>@vehicleDetails.make</strong></li>
+        <li><span>
+              Date of first registration
+            </span><strong>11 February 2002</strong></li>
+        <li><span>
+            Year of manufacture
+          </span><strong>@vehicleDetails.yearofmanufacture</strong></li>
+        <li><span>
+          Cylinder capacity (cc)
+        </span><strong>@vehicleDetails.cc
+        </strong></li>
+        <li><span>
+          CO₂Emissions
+        </span><strong>@vehicleDetails.co2
+        </strong></li>
+        <li><span>
+          Fuel type
+        </span><strong>@vehicleDetails.fuelType</strong></li>
+        <li><span>
+          Vehicle status
+        </span><strong>
+            @vehicleDetails.status
+        </strong></li>
+        <li><span>
+          Vehicle colour
+        </span><strong>@vehicleDetails.colour</strong></li>
+        <li><span>
+          Vehicle type approval
+        </span><strong>@vehicleDetails.approvalType</strong></li>
+        <li><span>
+          Wheelplan
+        </span><strong>@vehicleDetails.wheelPlan</strong></li>
+        <li><span>
+          Revenue weight
+        </span><strong>
+            @vehicleDetails.revenueWeight
+        </strong></li>
+    </ul>
+
+</div>
