@@ -1,0 +1,40 @@
+<style>
+    fieldset {
+    padding: 1em;
+    font:80%/1 sans-serif;
+    }
+
+    label {
+    float:left;
+    width:25%;
+    margin-right:0.5em;
+    padding-top:0.2em;
+    text-align:right;
+    font-weight:bold;
+    }
+
+    span.registrationNumberLabel {
+        background-color:#F5D625;
+        color:black;
+        margin:5px;
+        padding:5px;
+        max-width:400px;
+        border-top-style:groove;
+        border-left-style:groove;
+        border-right-style:groove;
+        border-bottom-style:groove;
+        }
+
+        table.group {
+        background-color:#299E81;
+        color:white;
+        margin:5px;
+        padding:5px;
+        max-width:400px;
+        border-top-style:groove;
+        border-left-style:groove;
+        border-right-style:groove;
+        border-bottom-style:groove;
+        }
+
+</style>

@@ -1,31 +1,7 @@
 @import model.{VehicleDetails}
 @(vehicleDetails: VehicleDetails)
-<style>
-    span.registrationNumberLabel {
-    background-color:#F5D625;
-    color:black;
-    margin:5px;
-    padding:5px;
-    max-width:400px;
-    border-top-style:groove;
-    border-left-style:groove;
-    border-right-style:groove;
-    border-bottom-style:groove;
-    }
 
-    table.group {
-    background-color:#299E81;
-    color:white;
-    margin:5px;
-    padding:5px;
-    max-width:400px;
-    border-top-style:groove;
-    border-left-style:groove;
-    border-right-style:groove;
-    border-bottom-style:groove;
-    }
-</style>
-
+@main("Details of the vehicle being checked ") {
 <div>
 
     <div>
@@ -92,3 +68,4 @@
     </ul>
 
 </div>
+}
