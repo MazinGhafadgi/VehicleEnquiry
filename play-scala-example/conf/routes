@@ -1,7 +1,7 @@
 # Routes
 
 # Home page
-GET     /                           controllers.Application.index
+GET     /                          controllers.Application.index
 POST /vehicle               controllers.Application.getVehicleDetails
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
