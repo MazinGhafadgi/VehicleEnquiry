@@ -1,6 +1,9 @@
 This is your new Play application
 =================================
 
+# to compile the project type "sbt compile"
+# to run play type "sbt run"
+
 http://localhost:9000/
 
 
